@@ -6,15 +6,36 @@
   flex-direction: column;
   gap: calc(var(--base) / 2);
   align-items: flex-start;
-  width: 66.66%;
-
-  @include mid-break {
-    width: 100%;
-  }
+  width: 100%;
+  margin-top: 30px;
+  color: var(--color-base-1000);
 }
 
 .submit {
-  margin-top: calc(var(--base) / 2);
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--color-base-100);
+  background-color: var(--color-blue-200);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: var(--color-gray-500);
+    transform: translateY(-5px);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 5px 0 3px rgba(4, 4, 4, 0.3);
+  }
 }
 
 .message {
